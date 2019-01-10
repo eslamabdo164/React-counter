@@ -1,26 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import  hand from './hand.svg';
+import Counter from './components/Counter'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+
+          <div className='main_nav'>
+              <img src ={hand} alt='logo' />  <h2>React Counter</h2>
+          </div>
+      
+        <Counter />
+      
+
+        </div>
     );
   }
 }
